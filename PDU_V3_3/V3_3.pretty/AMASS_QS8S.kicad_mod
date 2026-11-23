@@ -1,0 +1,167 @@
+(footprint "AMASS_QS8S"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "AMASS QS8-S anti-spark, vertical: solder cups through 2x Ø9.5 holes, pitch 14.4 mm (user's measured footprint 2026-11-19). Pads oval 11.5x12 (2.9 mm +/- gap). Pad 1 GND, pad 2 +")
+	(tags "QS8 QS8-S battery connector anti-spark")
+	(property "Reference" "REF**"
+		(at 0 8.2 0)
+		(layer "F.SilkS")
+		(uuid "8bd17693-8a32-436e-8ce1-8bda696df57c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "AMASS_QS8S"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "8741c24c-cac5-4f71-93e2-0f02990ad84a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "245d71f6-6389-4895-bd48-48b5b4e372f7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2606b159-53b7-4865-8149-737a45b4c87d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -14 -7)
+		(end 14 7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "3a6dbc30-3f8c-456f-bdc6-a8bf3fe0e4f8")
+	)
+	(fp_rect
+		(start -14 -7)
+		(end 14 7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "a34afb4d-83d7-4a75-a520-18ac04ee9cb1")
+	)
+	(fp_line
+		(start -14.1 7.1)
+		(end 5 7.1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c04f1583-0a84-446f-af3f-0dbd83e15064")
+	)
+	(fp_line
+		(start 11.1 7.1)
+		(end 14.1 7.1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e1f85f2e-53b4-436d-acd3-acd3e07508c9")
+	)
+	(fp_line
+		(start -14.1 -6.3)
+		(end -14.1 7.1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "549009ae-7c48-4a8f-b900-712e739d1208")
+	)
+	(fp_line
+		(start 14.1 -6.3)
+		(end 14.1 7.1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8cb15738-9b54-4040-b2c8-25079ba1913f")
+	)
+	(fp_text user "+"
+		(at 14.9 0 0)
+		(layer "F.SilkS")
+		(uuid "5e479e4e-929c-4aa3-907f-cdf62eca7b84")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+			)
+		)
+	)
+	(fp_text user "-"
+		(at -14.9 0 0)
+		(layer "F.SilkS")
+		(uuid "6dbb6185-baa9-4aa0-9b9e-12bc0373eb48")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(layer "F.Fab")
+		(uuid "fcc8b77c-f91d-4bc3-9ec0-0d1f92d0849a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole oval
+		(at -7.2 0)
+		(size 11.5 12)
+		(drill 9.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a262d7f6-c6b1-4a5a-a2e9-041c23d8e208")
+	)
+	(pad "2" thru_hole oval
+		(at 7.2 0)
+		(size 11.5 12)
+		(drill 9.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "dbae6376-452f-4d48-9d92-25acb5344795")
+	)
+	(embedded_fonts no)
+)
