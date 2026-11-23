@@ -74,6 +74,7 @@ J3 (JST-XH 4p to the Jetson): pin 1 NC, pin 2 SDA, pin 3 SCL, pin 4 GND.
 
 - Open the project with **KiCad 9**. Saving it in KiCad 10 makes it unreadable for KiCad 9.
 - The QS8-S footprint comes from a measured part; there is no official QS8-S drawing.
+- Upper board: `V2_atas/` (PCB only, no schematic). It stacks on J14/J15 and carries 4 XT60PW outputs; its channel labels follow the OUT2/OUT3 swap in the Channel Map.
 - Busbar cut drawing (BB1/BB2/BB3): `PDU_V3_3/PDU_V3_3_busbars.dxf`. Gerbers, BOM and pick-and-place are exported from KiCad.
 - Bottom side:
 
