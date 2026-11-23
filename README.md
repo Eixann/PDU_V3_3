@@ -70,48 +70,11 @@ J3 (JST-XH 4p to the Jetson): pin 1 NC, pin 2 SDA, pin 3 SCL, pin 4 GND.
 
 ---
 
-## Ordering (JLCPCB)
-
-1. Upload `Export/V3.3/PDU_V3_3_gerbers.zip`: 2 layers, 1.6 mm, **2 oz outer copper**.
-2. PCB Assembly, top side: `PDU_V3_3_BOM_JLC.csv` + `PDU_V3_3_CPL_JLC.csv` (only the 8 PROFETs, LCSC C3232444).
-   Check the pin-1 orientation in the JLC preview.
-3. Order a top-side stencil and hand-place the remaining SMD parts from `PDU_V3_3_BOM_full.csv`.
-4. Cut the busbars from `PDU_V3_3_busbars.dxf`, bolt them (M2), then solder them along their full length.
-
-<p align="center">
-  <img src="Images/busbars.png" alt="Busbar cut drawing" width="70%" />
-</p>
-
----
-
-## What's Inside
-
-```text
-PDU_V3_3/
-|-- PDU_V3_3/                        # KiCad 9 project
-|   |-- PDU_V3_3.kicad_pro / _sch / _pcb
-|   |-- V3_3.kicad_sym               # local symbols
-|   |-- V3_3.pretty/                 # local footprints: QS8-S, XT60PW with GND pegs, busbars, PROFET, logos
-|   |-- fp-lib-table, sym-lib-table  # point to the local libraries (${KIPRJMOD})
-|
-|-- Export/V3.3/
-|   |-- PDU_V3_3_gerbers.zip         # gerbers + drill files for JLCPCB
-|   |-- PDU_V3_3_BOM_JLC.csv         # JLC assembly BOM (8x BTS70012-1ESP)
-|   |-- PDU_V3_3_CPL_JLC.csv         # JLC pick-and-place for the PROFETs
-|   |-- PDU_V3_3_BOM_full.csv        # full BOM for hand assembly
-|   |-- PDU_V3_3_schematic.pdf       # schematic
-|   |-- PDU_V3_3.step                # 3D model
-|   |-- PDU_V3_3_busbars.dxf         # BB1/BB2/BB3 cut drawing
-|
-|-- Images/                          # renders used in this README
-```
-
----
-
 ## Notes
 
 - Open the project with **KiCad 9**. Saving it in KiCad 10 makes it unreadable for KiCad 9.
 - The QS8-S footprint comes from a measured part; there is no official QS8-S drawing.
+- Busbar cut drawing (BB1/BB2/BB3): `PDU_V3_3/PDU_V3_3_busbars.dxf`. Gerbers, BOM and pick-and-place are exported from KiCad.
 - Bottom side:
 
 <p align="center">
